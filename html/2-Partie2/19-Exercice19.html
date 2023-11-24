@@ -1,0 +1,63 @@
+<!--
+La balise <img> peut être contenue dans une balise <figure>. 
+    Celle-ci permet de donner un "sens" à l'image qui apporte une information complémentaire au texte.
+On peut ajouter une légende à cette image au moyen de la balise <figcaption>.
+Ces balises s'utilisent de la façon suivante :
+<figure>
+    <img src="mon_image.jpg" alt="Une belle image" />
+    <figcaption>Une superbe image</figcaption>
+</figure>
+Il est possible de mettre plusieurs balises img dans une une balise figure.
+-->
+
+<!--
+	1 - Créez un document contenant une balise figure.
+	2 - Cette balise comporte trois image et une légende par img.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exo 19 </title>
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        div {
+            display: flex;
+        }
+        
+        img {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Exo19 </h1>
+    <div>
+        <div class="img1">
+            <figure>
+                <img src="img/yeuxChat.png" alt="yeux de chat" title="Yeux de chat">
+                <figcaption>Une image d'oeil de chat</figcaption>
+            </figure>
+        </div>
+        <div class="img2">
+            <figure>
+                <img src="img/miku.jpg" alt="Hatsune Miku" title="Idole virtuelle">
+                <figcaption>Hatsune Miku, idole virtuelle connue</figcaption>
+            </figure>
+        </div>
+        <div class="img3">
+            <figure>
+                <img src="img/giphy.gif" alt="Petit Pingouin" title="Petit Pingouin">
+                <figcaption>Petit pingouin qui fait coucou</figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+
+</html>

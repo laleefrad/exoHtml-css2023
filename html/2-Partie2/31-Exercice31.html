@@ -1,0 +1,71 @@
+<!--
+Par défaut, les coins d'un bloc sont carrés. Un arrondi sur les bordures est appliqué avec la propriétée border-radius
+
+div{
+	border-radius: 5px 6px 4px 18px;
+}
+
+Pour appliquer le même arrondi sur les quatre coins :
+
+h2{
+	border-radius: 6px;
+}
+-->
+
+<!--
+	1 - Créez un document avec un h1 et un paragraphe et une div vide.
+	2 - Mettez une bordure sur chaque balise.
+	3 - Réalisez un arrondi de quelques px sur le h1 identique sur les quatre côtés.
+	4 - Sur le paragraphe, mettez un arrondi différent sur les coins-haut gauche et bas-droit d'une part et bas-gauche et haut-droit d'autre part.
+	5 - Donnez à la div une couleur de fond, une largeur et une hauteur identique et un border-radius de même dimension que la dimension d'un côté de la div.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo 31</title>
+    <style>
+        .title {
+            border-radius: 5px;
+            border: medium dashed green;
+            text-align: center;
+            color: rgb(216, 58, 203);
+        }
+        
+        .para2 {
+            width: 80%;
+            height: 70%;
+            border-radius: 70%;
+            border: medium dashed green;
+            background-color: rgb(121, 151, 60);
+        }
+        
+        .para1 {
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 40px;
+            border: medium dashed green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Exo 31</h1>
+    </header>
+    <div class="para1">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, rerum omnis error numquam aliquam velit sequi, debitis dolor sit amet consectetur adipisicing elit. Eum corporis nemo, exercitationem laboriosam sit minus laborum quasi iure. Quis
+            ve elit. Inventore consectetur esse similique quaerat, officia modi officiis pariatur enim vel ab vero sapiente voluptatibus quas
+        </p>
+    </div>
+    <div class="para2">
+        <p>SANS PARAGRAPHE RIEN NE S'AFFICHE.</p>
+
+    </div>
+</body>
+
+</html>

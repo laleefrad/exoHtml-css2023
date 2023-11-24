@@ -1,0 +1,62 @@
+<!--
+L'application de bordure sur les blocs se fait au moyen de la propriété border (version raccourcie) ou des propriétés border-width, border-style et border-color.
+Par exemple :
+h1{
+	border: 3px solid #87ff8d;
+}
+Il est possible d'appliquer une bordure à un seul côté. Dans ce cas, il faut utiliser les propriétées border-right-width, border-right-style et border-right-color (ici pour la bordure de droite).
+
+Vous trouverez l'ensemble des paramètres ici : https://developer.mozilla.org/fr/docs/Web/CSS/border.
+-->
+
+<!--
+	1 - Créez un document avec un h1 et deux paragraphes.
+	2 - Encadrez le premier paragraphe d'un trait continu coloré.
+	3 - Soulignez le h1 avec un tiret
+	4 - Donnez au second un effet de relief (pseudo-3d)
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo 30</title>
+    <style>
+        .title {
+            width: 50%;
+            border-bottom: 2px solid rgb(221, 63, 63);
+            text-align: center;
+            color: rgb(58, 61, 216);
+        }
+        
+        .para {
+            border: 5px solid rgb(79, 138, 56)
+        }
+        
+        .para2 {
+            border-style: groove;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Exo 30</h1>
+    </header>
+    <div class="para">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, rerum omnis error numquam aliquam velit sequi, debitis officiis perspiciatis voluptatibus magnam, cupiditate reprehenderit ea dolore! Sit asperiores veritatis culpa odio. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Eum corporis nemo, exercitationem laboriosam sit minus laborum quasi iure. Quis vel sequi, distinctio rerum in ea ut error tenetur qui quidem? Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Inventore consectetur esse similique quaerat, officia modi officiis pariatur enim vel ab vero sapiente voluptatibus quas eaque dolorem nihil dolores exercitationem nostrum.</p>
+    </div>
+    <div class="para2">
+        <p>w Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, rerum omnis error numquam aliquam velit sequi, debitis officiis perspiciatis voluptatibus magnam, cupiditate reprehenderit ea dolore! Sit asperiores veritatis culpa odio.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis nemo, exercitationem laboriosam sit minus laborum quasi iure. Quis vel sequi, distinctio rerum in ea ut error tenetur qui quidem? Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Inventore consectetur esse similique quaerat, officia modi officiis pariatur enim vel ab vero sapiente voluptatibus quas eaque dolorem nihil dolores exercitationem nostrum.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+    body {
+        background-color: grey
+    }
+    
+    span {
+        background-color: yellow;
+    }
+    
+    p {
+        background-color: yellowgreen;
+    }
+    
+    .titre1 {
+        background-color: palevioletred;
+        color: blueviolet;
+    }
+    
+    .titre2 {
+        background-color: aqua;
+        color: brown;
+    }
+    
+    #change1 {
+        background-color: plum;
+        color: wheat;
+    }

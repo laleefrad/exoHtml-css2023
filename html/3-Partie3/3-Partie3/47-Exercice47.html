@@ -1,0 +1,54 @@
+<!--
+	En CSS, on peut masquer un bloc en utilisant la propriété display:none.
+	.masquer{
+		display: none;
+	}
+	Pour afficher ce même élément, on utilise display:block.
+-->
+
+<!--
+	1 - Créez un document avec deux paragraphes contenant chacun du texte et une image.
+	2 - Les images ne sont pas visibles.
+	3 - Au survol d'un paragraphe, l'image correspondante apparait.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 47</title>
+    <style>
+        img {
+            width: 75%;
+            display: none;
+        }
+        
+        .image:hover {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Exo 47 </h1>
+    </header>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec pulvinar purus. Fusce vel ornare enim, a congue tortor. Quisque vulputate quam a dictum viverra. Ut sed vehicula justo. Phasellus laoreet lectus id dolor iaculis interdum. Cras
+            vel convallis metus. Sed gravida, enim eu tempus auctor, leo nibh eleifend velit, eget tempor felis eros in est. Morbi vel commodo diam, ut fringilla risus. Integer sit amet justo in ligula rhoncus dictum accumsan in urna. Nunc cursus tristique
+            placerat.
+        </p>
+        <img src="img/lotus3.jpg" alt="">
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec pulvinar purus. Fusce vel ornare enim, a congue tortor. Quisque vulputate quam a dictum viverra. Ut sed vehicula justo. Phasellus laoreet lectus id dolor iaculis interdum. Cras
+            vel convallis metus. Sed gravida, enim eu tempus auctor, leo nibh eleifend velit, eget tempor felis eros in est. Morbi vel commodo diam, ut fringilla risus. Integer sit amet justo in ligula rhoncus dictum accumsan in urna. Nunc cursus tristique
+            placerat.
+        </p>
+        <img class="image" src=" img/lotus3.jpg " alt="Lotus rose ">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!--
+Il est possible d'utiliser d'autres polices que celles présentes sur le poste client.
+Pour se faire, il est nécessaire de fournir la police au moyen de la règle CSS @font-face (voir https://developer.mozilla.org/fr/docs/Web/CSS/@font-face).
+Il est nécessaire d'utiliser plusieurs formats de police, tous les navigateurs ne supportant pas le même format de police (cf. tableau "Browser Support" http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp)
+Après cela, on utilise la police dans les balises souhaitées au moyen de la déclaration présentée dans l'exercice précédent.
+-->
+<!--
+	1 - Créez un document.
+	2 - Sur le site http://www.fontsquirrel.com/. Téléchargez deux polices :
+		A - Dans Font Filter, choisissez Webfont.
+		B - Choisisser une police.
+		C - Sur la fiche de la police, choisissez Webfont Kit.
+		D - Téléchargez en choisissant tous les formats.
+	3 - Ajoutez bien les deux règles @font-face au début du CSS.
+	4 - Créez deux paragraphes.
+	5 - Appliquez une police différente à chaque paragraphe.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo 21</title>
+    <style>
+        @font-face {
+            font-family: "3dumb_regular_macroman";
+            src: url("font/web\fonts/3dumb_regular_macroman");
+        }
+        
+        @font-face {
+            font-family: 2dumb_regular_macroman;
+            src: url(font/AlexBrush-Regular.ttf);
+        }
+        
+        .premier {
+            font-family: 2dumb_regular_macroman;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exo 21</h1>
+        <div>
+            <p class="premier">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor numquam minus at praesentium iusto voluptatem veritatis, ut ipsam, dolore distinctio illo eum illum. Ullam accusamus aspernatur quo itaque laudantium obcaecati.
+            </p>
+            <p class="deux">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vel enim fugiat maiores eaque a itaque sint delectus eius adipisci distinctio sunt obcaecati, repellendus dolore nostrum provident ratione eligendi voluptas?
+            </p>
+        </div>
+    </header>
+</body>
+<!------CORRECTION------->
+
+</html>

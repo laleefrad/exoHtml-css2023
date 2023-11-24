@@ -1,0 +1,73 @@
+<!--
+Avec CSS3, il devient possible de faire du multi-colonnes dans un bloc.
+Par exemple :
+div{
+	column-count:2;
+	column-gap:20px;
+}
+Column-count indique le nombre de colonnes et column-gap l'espace entre chaque colonne.
+Cette propriété étant récente, il faut mettre absolument des préfixes sur les propriétées comme suit :
+div{
+	-moz-column-count:2;
+	-webkit-column-count:2;
+	-o-column-count:2;
+	column-count:2;
+	-moz-column-gap:20px;
+	-webkit-column-gap:20px;
+	-o-column-gap:20px;
+	column-gap:20px;
+}
+
+Pour ajouter une trait de séparation, il faut  utiliser les trois propriétées suivantes : column-rule-width, column-rule-color, column-rule-style.
+-->
+
+<!--
+	1 - Créez un document avec un h1 et un paragraphe contenant au-moins 3000 caractères.
+	2 - Mettez le paragraphe sur trois colonnes.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo 34 </title>
+    <style>
+        .title {
+            text-align: center;
+            color: rgb(190, 34, 34);
+        }
+        
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        
+        .colonne {
+            columns: 30em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2 class="title">Exo 34</h2>
+    <h1> Les colonnes </h1>
+
+    <p class="colonne"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget scelerisque lorem. Proin pellentesque pretium nulla non tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla dui placerat, maximus tellus sed, sollicitudin
+        dui. Nam quis luctus arcu. Cras eu neque consectetur, finibus arcu nec, tincidunt tellus. Aenean tincidunt iaculis odio, eu tempus massa placerat sed. Sed sem justo, interdum in consequat id, molestie in purus. Nunc at rutrum magna. Mauris fermentum,
+        turpis at fringilla aliquam, lectus augue viverra turpis, pellentesque faucibus velit dolor dapibus nunc. Aenean pellentesque, tortor nec facilisis semper, elit lectus faucibus purus, quis rutrum diam leo ut mauris. Vivamus non leo eget nunc gravida
+        sollicitudin. Maecenas commodo turpis odio, sed sagittis nibh vulputate et. Cras feugiat pretium feugiat. Sed luctus lorem nec diam malesuada, nec feugiat quam elementum. Proin ullamcorper est vitae metus commodo, non ullamcorper mi maximus. Praesent
+        a mattis turpis. Sed varius tellus diam, sit amet ultricies purus tristique eget. Praesent eget leo a metus congue dapibus vel ut justo. Aliquam erat purus, viverra id eros sit amet, malesuada rutrum mauris. In vel orci ullamcorper, consequat
+        nulla ut, aliquam dui. Mauris porttitor fermentum enim id placerat. Etiam vitae mollis ipsum, nec tristique justo. Integer sed elit eget purus varius accumsan. Aliquam erat volutpat. Donec et condimentum dolor, sit amet dictum libero. Proin ultricies
+        lacus vel sem bibendum pellentesque. Phasellus in est nec enim accumsan ultrices. Praesent sem felis, scelerisque in est a, efficitur venenatis purus. Nullam euismod sit amet eros eleifend egestas. Nullam ut nunc quis ligula iaculis sollicitudin.
+        Praesent tempor ex in suscipit fringilla. Nullam dignissim quam eu erat aliquam, vitae vehicula nulla ullamcorper. In sollicitudin quam in placerat mattis. Nunc at consequat enim. Suspendisse eu ultricies elit. Suspendisse a leo eu ex lobortis
+        feugiat a a dolor. Phasellus non nunc neque. Vestibulum dictum gravida lectus. Nunc tincidunt iaculis neque. Nulla massa nulla, lobortis sollicitudin tellus sit amet, vestibulum interdum lorem. In hac habitasse platea dictumst. Etiam dignissim
+        lectus in magna posuere, ac cursus augue placerat. In suscipit sapien non augue mollis tincidunt. Duis posuere neque ac magna viverra venenatis. Nullam condimentum tristique tortor pulvinar fringilla. Nullam molestie eleifend lectus. Pellentesque
+        id consectetur tortor. In et venenatis tellus, at pretium libero. Sed euismod vestibulum sem, vitae fermentum risus sodales eget. Proin ac lorem ac velit facilisis vulputate. Pellentesque sit amet justo ac lectus bibendum pulvinar. Nullam malesuada,
+        lorem at finibus hendrerit, ipsum arcu faucibus est, a vestibulum libero lorem ac lacus. Donec sodales mattis leo, vel dapibus dui tincidunt cursus. Proin ullamcorper nisl sit amet leo lacinia, sed eleifend lorem sodales. In feugiat, velit ut
+        volutpat sollicitudin integer. </p>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!--
+	La modification dynamique du style consiste à modifier le CSS d'un élément quand l'utilisateur effectue sur celui-ci une action.
+	Ainsi, on peut agir au survol de l'élément de la façon suivante
+	h1:hover{
+		color: red;
+	}
+	Au survol du h1, le texte de ce h1 devient rouge.
+	On appelle :hover une pseudo-classe.
+-->
+
+<!--
+	1 - Créez un document contenant trois paragraphes de 500 caractères minimum chaque.
+	2 - Au survol du premier, la couleur du fond de ce paragraphe change.
+	3 - Au survol du second, une bordure apparait sur celui-ci.
+	4 - Au survol du troisième, ce dernier a une largeur de 50% de la fenêtre et une hauteur de 50px. Attention, le reste du texte doit être masqué !
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo 46</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(66, 187, 66);
+        }
+        
+        div {
+            width: 100%
+        }
+        
+        .un:hover {
+            color: red;
+        }
+        
+        .deux:hover {
+            border: solid 2px darkturquoise
+        }
+        
+        .trois:hover {
+            width: 50%;
+            height: 50px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exo 46</h1>
+    </header>
+    <div>
+        <p class="un">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec pulvinar purus. Fusce vel ornare enim, a congue tortor. Quisque vulputate quam a dictum viverra. Ut sed vehicula justo. Phasellus laoreet lectus id dolor iaculis interdum. Cras vel convallis
+            metus. Sed gravida, enim eu tempus auctor, leo nibh eleifend velit, eget tempor felis eros in est. Morbi vel commodo diam, ut fringilla risus. Integer sit amet justo in ligula rhoncus dictum accumsan in urna. Nunc cursus tristique placerat.Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Integer nec pulvinar purus. Fusce vel ornare enim, a congue tortor. Quisque vulputate quam a dictum viverra. Ut sed vehicula justo. Phasellus laoreet lectus id dolor iaculis interdum. Cras
+            vel convallis metus. Sed gravida, enim eu tempus auctor, leo nibh eleifend velit, eget tempor felis eros in est. Morbi vel commodo diam, ut fringilla risus. Integer sit amet justo in ligula rhoncus dictum accumsan in urna. Nunc cursus tristique
+            placerat.
+        </p>
+        <p class="deux">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec pulvinar purus. Fusce vel ornare enim, a congue tortor. Quisque vulputate quam a dictum viverra. Ut sed vehicula justo. Phasellus laoreet lectus id dolor iaculis interdum. Cras vel convallis
+            metus. Sed gravida, enim eu tempus auctor, leo nibh eleifend velit, eget tempor felis eros in est. Morbi vel commodo diam, ut fringilla risus. Integer sit amet justo in ligula rhoncus dictum accumsan in urna. Nunc cursus tristique placerat.Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Integer nec pulvinar purus. Fusce vel ornare enim, a congue tortor. Quisque vulputate quam a dictum viverra. Ut sed vehicula justo. Phasellus laoreet lectus id dolor iaculis interdum. Cras
+            vel convallis metus. Sed gravida, enim eu tempus auctor, leo nibh eleifend velit, eget tempor felis eros in est. Morbi vel commodo diam, ut fringilla risus. Integer sit amet justo in ligula rhoncus dictum accumsan in urna. Nunc cursus tristique
+            placerat.
+        </p>
+        <p class="trois">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec pulvinar purus. Fusce vel ornare enim, a congue tortor. Quisque vulputate quam a dictum viverra. Ut sed vehicula justo. Phasellus laoreet lectus id dolor iaculis interdum. Cras vel convallis
+            metus. Sed gravida, enim eu tempus auctor, leo nibh eleifend velit, eget tempor felis eros in est. Morbi vel commodo diam, ut fringilla risus. Integer sit amet justo in ligula rhoncus dictum accumsan in urna. Nunc cursus tristique placerat.Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Integer nec pulvinar purus. Fusce vel ornare enim, a congue tortor. Quisque vulputate quam a dictum viverra. Ut sed vehicula justo. Phasellus laoreet lectus id dolor iaculis interdum. Cras
+            vel convallis metus. Sed gravida, enim eu tempus auctor, leo nibh eleifend velit, eget tempor felis eros in est. Morbi vel commodo diam, ut fringilla risus. Integer sit amet justo in ligula rhoncus dictum accumsan in urna. Nunc cursus tristique
+            placerat.
+        </p>
+    </div>
+</body>
+
+</html>

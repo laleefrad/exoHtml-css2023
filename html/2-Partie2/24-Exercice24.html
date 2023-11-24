@@ -1,0 +1,112 @@
+<!--
+D'autre propriétées CSS sont utilisées pour formater le texte :
+_ text-align : alignement du texte.
+_ line-height : hauteur de la ligne de texte.
+_ text-transform : changement de la casse du texte.
+_ letter-spacing : espacement des lettres
+_ text-decoration : texte souligné, texte barré …
+-->
+
+<!--
+	1 - Créez un document.
+	2 - Vous y inséré deux ensemble : h1 h2 p.
+	3 - les h1 sont centrés, les h2 alignés à droites.
+	4 - Le second paragraphe a un espacement entre les lignes plus important que la normale.
+	5 - Le second h1 est en majuscule (sans modification du HTML).
+	6 - Le second h2 a un espacement plus grand entre les lettres que la normale.
+	7 - Un paragraphe comporte du texte barré.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo 24</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: right;
+        }
+        
+        .secondp {
+            letter-spacing: 10px;
+        }
+        
+        .deux {
+            text-transform: uppercase;
+        }
+        
+        .secondh {
+            letter-spacing: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exo 24</h1>
+    </header>
+    <div>
+        <h1 class="un">Premier h1</h1>
+        <h2>Second h2</h2>
+        <p>
+            Lorem, ipsum dolor sit <del> amet consectetur adipisicing elit. Sint cum nisi quae nihil, obcaecati delectus nostrum ea. Odit impedit </del>molestiae nam deleniti, natus officiis id soluta dolores, vel possimus aut. Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Dignissimos, porro minus vero nobis obcaecati earum tempora dolor veritatis doloremque aliquid ea recusandae laborum. Sapiente illum deleniti maxime officiis distinctio ipsa! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Veniam earum deleniti adipisci quae nobis iste nesciunt fuga, quos hic cupiditate. Amet pariatur voluptatem earum quod quam <del> perferendis commodi facilis beatae.</del>
+        </p>
+    </div>
+    <div>
+        <h1 class="deux">deuxieme h1</h1>
+        <h2 class="secondh">Second h2</h2>
+        <p class="secondp">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint cum nisi quae nihil, obcaecati delectus nostrum ea. Odit impedit molestiae nam deleniti, natus officiis id soluta dolores, vel possimus aut.
+        </p>
+    </div>
+</body>
+<!--    CORRECTION
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formater le texte</title>
+	<style>
+		h1:first-of-type {
+			text-align: center;
+		}
+
+		h1:nth-of-type(2) {
+			text-transform: uppercase;
+		}
+
+		h2 {
+			text-align: right;
+			letter-spacing: 0.1em;
+		}
+
+		p:nth-of-type(2) {
+			line-height: 1.5em;
+		}
+
+		del {
+			text-decoration: line-through;
+		}
+	</style>
+</head>
+<body>
+	<h1> titre 1</h1>
+	<h2> titre 2</h2>
+	<p> paragraphe</p>
+	<h1> titre 1 en majuscule</h1>
+	<h2> titre 2 avec  espacement </h2>
+	<p>2eme paragraphe  <del> texte barré</del></p>
+</body>
+</html>
+
+
+-->
+
+</html>

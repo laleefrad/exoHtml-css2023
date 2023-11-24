@@ -1,0 +1,104 @@
+<!--
+À l'aide de la propriété CSS box-shadow, on peut appliquer une ombre sur un bloc :
+h2{
+	box-shadow: 4px 8px 2px grey;
+}
+-->
+
+<!--
+	1 - Créez un document avec un h1 et un paragraphe.
+	2 - Faites une ombre sur le h1.
+	3 - Faites une ombre sur le paragraphe et ajoutez la propriété inset pour appliquer une ombre interne.
+-->
+<!--
+Jusqu'à maintenant, nous avons appliqué une couleur de fond à nos blocs.
+On peut également appliquer une image à un bloc.
+de la façon suivante :
+p{
+	background-image: url("fond.jpg");
+}
+Plusieurs réglages supplémentaires sont possibles :
+_ background-position : position initiale d'une image d'arrière-plan
+_ background-origine : position de l'origine d'une image
+_ background-size: dimension de l'image d'arrière-plan 
+_ background-repeat :  spécifie la façon dont l'image d'arrière-plan doit être répétée
+
+-->
+
+<!--
+	1 - Créez un document avec un h1 et un paragraphe.
+	2 - Mettez une image d'arrière plan sur le h1. Choisissez une image de quelques pixels de côté.
+	3 - Mettez une image d'arrière plan sur le paragraphe. L'image sera moins grande que la largeur de la page. Faites répéter cette image. 
+	4 - Mettez une image d'arrière plan sur le body. À l'aide de background-size, remplissez la page sans déformer l'image.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exo 33</title>
+    <style>
+        h1 {
+            box-shadow: 4px 8px 2px grey;
+        }
+        
+        .title {
+            text-align: center;
+            color: rgb(189, 104, 238);
+            background-image: url(img/dog.jpg);
+            background-size: cover;
+            height: 150px;
+            margin: 250px;
+        }
+        
+        p {
+            box-shadow: 4px 8px 2px rgb(33, 204, 90) inset;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            color: navajowhite;
+            width: 75%;
+            background-image: url(img/chatSorcier.jpg);
+            background-repeat: inherit;
+            text-align: center;
+        }
+        
+        body {
+            background-image: url(img/miku.jpg);
+            background-size: cover;
+        }
+        
+        .ombre {
+            color: lightcoral;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="title"> Exo 33 </h2>
+    </header>
+    <div class="ombre">
+        <h1> Jeu d'ombre</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero ipsam impedit quae rerum nemo saepe, tempora odit fuga explicabo! Quo voluptates ipsa ad fuga rem quaerat obcaecati ullam soluta. let name Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Aliquam dolore eum, deleniti consequatur corporis in excepturi, architecto cupiditate non libero consequuntur. Amet possimus id dolores, numquam a quis earum dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dicta dolor eligendi delectus expedita possimus? Beatae perferendis quam ipsa ut praesentium delectus eos nostrum architecto harum. Laborum corrupti doloremque odit. Suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+            maxime pariatur maiores, ab harum animi nisi dolor eaque consequatur tempora similique suscipit. Est doloremque impedit sed quod deserunt magnam natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, harum vitae asperiores
+            iusto minima voluptate. Sint tempora eligendi a eum, quia commodi repellat. Ratione libero molestias laborum iusto perspiciatis nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sed dolor reprehenderit blanditiis accusamus.
+            Eveniet harum sunt accusantium temporibus voluptatibus impedit. Sed accusamus sint aliquid vel. Distinctio necessitatibus eaque iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia eius vel ipsum earum atque! Non magni
+            voluptas, temporibus est, impedit placeat optio voluptatum quae aspernatur, dignissimos pariatur deleniti neque sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minus non aperiam sequi? Quasi ex consequatur, nam asperiores
+            quo voluptatum et perspiciatis amet dignissimos voluptates nobis aliquam repellendus, veritatis voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, corporis. Odio, voluptatibus. Ipsam nemo distinctio officia soluta
+            aspernatur ducimus itaque quis sapiente quisquam, aut consequatur adipisci assumenda veniam! Nostrum, maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita labore, harum rerum et maiores illo quo facilis possimus
+            quis. Fuga nobis voluptatibus quam ut atque eaque neque alias assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis fuga tempore, corrupti aliquam nesciunt ipsa labore at nulla non eos iusto enim repellat quibusdam,
+            magnam quaerat iure, cumque aperiam adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque facilis sunt, iusto recusandae in reiciendis, odit cumque corrupti repudiandae voluptate temporibus ab esse suscipit autem modi praesentium
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab est a ipsum enim autem id cum placeat praesentium distinctio veritatis, qui hic nostrum culpa ullam fugiat nemo corrupti sequi fugit! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Maiores facilis quod rem excepturi accusantium earum ut vel culpa optio quidem? Voluptates, magni. Unde quos adipisci sapiente esse optio sequi expedita? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore consequatur esse
+            voluptates quaerat repudiandae odio velit, magni laudantium sapiente non dicta, natus perspiciatis numquam accusamus voluptate nostrum! Reprehenderit, quia pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eveniet,
+            dignissimos fugiat blanditiis quaerat necessitatibus maxime perspiciatis? Eius maxime iste magni sed ut harum commodi aliquam, rem eveniet, aspernatur exercitationem! iure est tempore!</p>
+    </div>
+</body>
+
+</html>

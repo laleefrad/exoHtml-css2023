@@ -1,0 +1,97 @@
+<!--
+La propriété CSS border peut être appliquée à des cellules individuelles d'un tableau (<td> ou <th>) pour définir le style, l'épaisseur et la couleur de leurs bordures. 
+Cela permet de personnaliser l'apparence de chaque cellule.
+
+Pour éliminer l'espace entre les bordures de cellules jointives dans un tableau, la propriété CSS border-collapse est utilisée sur l'élément <table>. 
+Cette propriété peut prendre deux valeurs :
+	separate (valeur par défaut) maintient un espace entre les bordures de cellules adjacentes.
+
+	collapse fusionne les bordures de cellules adjacentes en une seule bordure, éliminant ainsi l'espace entre elles.
+
+L'utilisation de border-collapse: collapse; est courante pour créer des tableaux avec un aspect plus compact et uniforme,  en particulier pour des affichages de données denses ou pour un style de design plus épuré.
+-->
+
+<!--
+	1 - Recopiez le tableau de l'exercice précédent
+	2 - Mettez une bordure large sur le contour extérieur du tableau.
+	3 - Mettez sur les autres bordures de cellule un tireté fin.
+	4 - Ajoutez un couleur de fond foncée sur la première ligne avec un texte en blanc.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exo 43 </title>
+</head>
+<style>
+    h1,
+    h2 {
+        text-align: center;
+        color: rgb(155, 11, 184)
+    }
+    
+    div {
+        text-align: center;
+    }
+    
+    table {
+        background-color: darkblue;
+        color: wheat;
+        border: dashed 2px rgb(127, 180, 127);
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid pink;
+        border-collapse: collapse;
+        border: dashed 2px rgb(127, 180, 127);
+    }
+    
+    th,
+    td {
+        padding: 10px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1> Exo 43 </h1>
+        <h2> Les tableaux </h2>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <th> Ville &nbsp;</th>
+                <th> Département &nbsp;</th>
+                <th> Région &nbsp;</th>
+            </tr>
+            <tr>
+                <td>Argenteuil&nbsp;</td>
+                <td> Val d'Oise &nbsp;</td>
+                <td> Iles de France &nbsp;</td>
+            </tr>
+            <tr>
+                <td>Cormeilles &nbsp;&nbsp;</td>
+                <td>Val d'Oise&nbsp; </td>
+                <td>Iles de France&nbsp;</td>
+            </tr>
+            <tr>
+                <td> Cartelègue</td>
+                <td>Gironde </td>
+                <td>Nouvelle Aquitaine </td>
+
+            </tr>
+
+
+
+
+        </table>
+
+    </div>
+</body>
+
+</html>

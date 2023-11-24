@@ -1,0 +1,84 @@
+<!--
+On peut appliquer à un bloc un marge et du padding.
+p{
+	margin-top : 12px;
+	margin-right : 9px;
+	margin-bottom : 3px;
+	margin-left : 5px;
+	padding-top : 4px;
+	padding-right : 7px;
+	padding-bottom : 8px;
+	padding-left : 9px;
+}
+Il existe une écriture raccourcie. Voici la même déclaration que précédemment : 
+p{
+	margin: 12px 9px 3px 5px;
+	padding: 4px 7px 8px 9px;
+}
+Les quatre valeurs sont déclarées dans le sens horaire en partant du haut.
+-->
+
+<!--
+	1 - Créez un document.
+	2 - Vous y insérez trois div de taille identique.
+	3 - Donnez à la première div des marges.
+	4 - Donnez à la seconde div du padding et des marges. 
+	5 - Donnez à la troisième div du padding.
+	6 - Quelle différence voyez-vous entre la marge et le padding ?
+-> la marge est plus fine que le padding
+	7 - Que remarquez vous sur l'espace entre la première et la seconde div ? Comment expliquez-vous cela ?
+-> le marging et le padding ne touche pas au contenu des div mais à ce qui les entour
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exo 28 </title>
+    <style>
+        .title {
+            text-align: center;
+            background-color: gray;
+        }
+        
+        div {
+            text-align: center;
+            width: 60%;
+            background-color: darkolivegreen;
+            color: wheat;
+        }
+        
+        .marge {
+            margin: 22px 19px 13px 15px;
+        }
+        
+        .les2 {
+            margin: 22px 19px 13px 15px;
+            padding: 14px 17px 18px 19px;
+        }
+        
+        .padding {
+            padding: 10px 7px 8px 19px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title"> Exo 28</h1>
+    </header>
+    <div class="marge">
+        <h2> Marge</h2>
+    </div>
+    <div class="les2">
+        <h2>Marge et padding </h2>
+    </div>
+    <div class="padding">
+        <h2> PAdding </h2>
+    </div>
+</body>
+
+</html>

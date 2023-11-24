@@ -1,0 +1,57 @@
+<!--
+L'utilisation de styles CSS dans la page HTML peut se faire en déclarant ceux-ci dans l'en-tête de la page entre deux balises : <style> </style>.
+
+Dans celle-ci. On écrit les styles de la façon suivante :
+sélecteur {
+	nom du style appliqué : valeur choisie;
+}
+Par exemple, pour l'ensemble de la page :
+body{
+	color: blue;
+}
+-->
+
+<!--
+	1 - Bâtissez la structure de base d'une page HTML.
+	2 - Écrivez deux paragraphes.
+	3 - Mettez un h2 avant chaque paragraphe.
+	4 - Appliquez une couleur aux paragraphe et une autre couleur aux titres en vous aidant des noms de couleurs donnés à la page https://developer.mozilla.org/fr/docs/CSS/Premiers_pas/Couleurs.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exo 05</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: blue;
+            background-color: rgb(197, 93, 161);
+        }
+        
+        h2 {
+            background-color: rgb(182, 223, 34);
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Exo 05</h1>
+    </header>
+    <h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem suscipit quia aliquid nulla repudiandae repellendus laudantium autem molestiae quo debitis eveniet possimus molestias odio harum officia odit provident, velit est?</p>
+    </h2>
+    <h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem suscipit quia aliquid nulla repudiandae repellendus laudantium autem molestiae quo debitis eveniet possimus molestias odio harum officia odit provident, velit est?</p>
+    </h2>
+    <h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem suscipit quia aliquid nulla repudiandae repellendus laudantium autem molestiae quo debitis eveniet possimus molestias odio harum officia odit provident, velit est?</p>
+    </h2>
+</body>
+
+</html>

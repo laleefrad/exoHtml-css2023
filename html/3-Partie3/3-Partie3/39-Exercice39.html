@@ -1,0 +1,214 @@
+<!--
+L'élément textarea en HTML permet d'intégrer un champ de saisie à plusieurs lignes dans un formulaire. 
+Il est utilisé pour collecter des données textuelles plus longues que ce qui est généralement saisi dans un champ de texte simple.
+Par exemple, il est souvent utilisé pour les commentaires, les messages ou d'autres types de saisies de texte plus longues.
+
+L'élément select représente un menu déroulant avec des options. 
+Il permet aux utilisateurs de sélectionner une option parmi plusieurs. 
+Cet élément est souvent utilisé pour les listes déroulantes, telles que les listes de choix de pays, de langues, de catégories, etc.
+
+Deux types d'input permettent de créer une liste de choix :
+	checkbox : 
+		les cases à cocher permettent aux utilisateurs de sélectionner plusieurs options parmi un ensemble de choix.
+	radio : 
+		les boutons radio permettent aux utilisateurs de sélectionner une seule option parmi un ensemble de choix.
+Ces éléments sont des composants essentiels pour la création de formulaires interactifs
+-->
+
+<!--
+	1 - Réalisez un document contenant un formulaire
+	2 - En-dehors des éléments de base, ce formulaire comprend cinq champs input de type text :
+		_ prénom
+		_ nom
+		_ voie
+		_ code postal
+		_ ville
+	3 - Ajoutez des labels pour chaque champ	
+	4 - Ajoutez les champs suivants (avec les labels):
+		_ téléphone
+		_ email
+		_ date de naissance
+		_ site web
+	5 - Ouvrez cette page dans différents navigateurs.
+	6 - Ajoutez les champs suivants (avec les labels):
+		_ titre (sélection : M, Mme, Mlle).
+		_ type de téléphone (sélection : fixe, mobile).
+		_ commentaire (texte long à saisir).
+		_ centres d'intérêts (choix multiple possible).
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo 38t</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: darkseagreen;
+        }
+        
+        .form {
+            width: 50%;
+            border: solid darkolivegreen;
+            text-align: center;
+        }
+        
+        .com {
+            width: 50%;
+            text-align: center;
+            border: solid rgb(6, 182, 94);
+        }
+        
+        .interet {
+            text-align: center;
+            width: 50%;
+            border: solid darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exo 39</h1>
+    </header>
+    <div class="form">
+        <form action="" method="post">
+            <label for="titre"> Titre </label>
+            <input type="radio" name="titre" id="titre" />
+            <label for="titre"> Mr</label>
+            <input type="radio" name="titre" id="mr" />
+            <label for="titre"> Mme</label>
+            <input type="radio" name="titre" id="mme" />
+            <label for="titre"> Mlle</label>
+            <input type="radio" name="titre" id="mlle" />
+            <br />
+            <label for="firstname"> Prénom </label>
+            <input type="text" name="prenom" id="firstname" />
+            <br />
+            <label for="lastname"> Nom </label>&nbsp;&nbsp;&nbsp;
+            <input type="text" name="nom" id="lastname" />
+            <br />
+            <label for="adress"> Adresse </label>
+            <input type="text" name="adress" id="adress" />
+            <br />
+            <label for="cp"> Code postal </label>
+            <input type="text" name="cp" id="cp" />
+            <br />
+            <label for="ville "> Ville </label>
+            <input type="text " name="ville" id="ville" />
+            <br />
+            <label for="tel"> Téléphone </label>
+            <input type="text" name="tel" id="tel" />
+            <label for="tel"> Mobile </label>
+            <input type="checkbox" name="tel" id="mobile" />
+            <label for="tel"> Fixe </label>
+            <input type="checkbox" name="tel" id="tfix" />
+            <br />
+            <label for="mail"> Adresse mail </label>
+            <input type="email" name="mail" id="mail" />
+            <br />
+            <label for="born"> Date de Naissance </label>
+            <input type="date" name="born" id="born" />
+            <br>
+            <label for="web"> Site web </label>
+            <input type="url" name="web" id="web" />
+            <br>
+        </form>
+    </div>
+    <div class="com">
+        <form action="">
+            <textarea name="com" id="com" cols="30" rows="10"> Dites nous tout </textarea>
+            <label for="com"> Commentaire </label>
+        </form>
+    </div>
+    <div class="interet">
+        <form action="">
+            <form method="get" action="">
+                <p>
+                    Vos hobbies :
+                    <br>
+                    <input type="checkbox" name="cine" id="cine"> <label for="cine"> Cinéma</label><br>
+                    <input type="checkbox" name="jeu" id="jeux"> <label for="jeu"> Jeux vidéo</label><br>
+                    <input type="checkbox" name="lecture" id="lecture"> <label for=" "> Lecture </label><br>
+                    <input type="checkbox" name="autre" id="autre"> <label for=" "> Autre</label>
+                </p>
+            </form>
+        </form>
+    </div>
+</body>
+<!------- CORRECTION
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>exercice39</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>exercice39</h1>
+    <form>
+      <label for="titre">Titre</label>
+      	<select id="titre">
+			<option value="M" >M.</option>
+			<option value="Mme" selected>Mme</option>
+			<option value="autre" >autre</option>
+		</select
+      ><br />
+
+      <label for="telephone-type">Type de téléphone</label>
+      <select id="telephone-type">
+        <option value="fixe">Fixe</option>
+        <option value="mobile">Mobile</option></select
+      ><br />
+
+      <label for="commentaire">Commentaire</label>
+      <textarea id="commentaire" rows="4" cols="50"></textarea><br />
+
+      <label>Centres d'intérêts</label><br />
+      <input type="checkbox" id="sport" name="interest" value="sport" />
+      <label for="sport">Sport</label><br />
+      <input type="checkbox" id="cinema" name="interest" value="cinema" />
+      <label for="cinema">Cinéma</label><br />
+      <input type="checkbox" id="musique" name="interest" value="musique" />
+      <label for="musique">Musique</label><br />
+
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" /><br />
+
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" /><br />
+
+      <label for="voie">Voie</label>
+      <input type="text" id="voie" /><br />
+
+      <label for="CP">Code Postal</label>
+      <input type="text" id="CP" /><br />
+
+      <label for="ville">Ville</label>
+      <input type="text" id="ville" /><br />
+
+      <label for="telephone">Téléphone</label>
+      <input type="tel" id="telephone" /><br />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" /><br />
+
+      <label for="naissance">Date de naissance</label>
+      <input type="date" id="naissance" /><br />
+
+      <label for="site-web">Site web</label>
+      <input type="url" id="site-web" /><br />
+
+      <input type="submit" value="Confirmer" />
+    </form>
+  </body>
+</html>
+
+
+
+-->
+
+</html>

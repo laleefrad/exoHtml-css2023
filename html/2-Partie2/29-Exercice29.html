@@ -1,0 +1,62 @@
+<!--
+Par défaut, si vous redimensionnez un bloc; dans le cas où son contenu est plus grand que sa taille, ce contenu dépassera. Il est cependant possible de modifier ce comportement avec la propriété overflow.
+-->
+
+<!--
+	1 - Créez un document.
+	2 - Vous y insérez deux paragraphes contenants au-moins 1000 caractères chacun et n'ayant pas plus de 20 pixels de hauteur.
+	3 - Masquez, dans le premier paragraphe, le contenu qui dépasse.
+	4 - Faites défilez, dans le second paragraphe, le contenu au moyen d'un ascenseur (essayez successivement overflow-x et overflow-y)
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo 29</title>
+    <style>
+        .title {
+            text-align: center;
+            color: indianred;
+        }
+        
+        p {
+            height: 20px;
+        }
+        
+        .un {
+            visibility: hidden;
+        }
+        
+        .deux {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Exo 29</h1>
+    </header>
+
+    <div>
+        <p class="un">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod felis eu nulla dignissim maximus. Phasellus euismod nisl metus, vitae elementum lacus elementum sit amet. Praesent vehicula urna ut sem gravida elementum quis in orci. Praesent
+            id felis ac sapien viverra laoreet a quis felis. Nam dignissim, libero vitae consequat tincidunt, enim nisl vehicula mi, et dapibus purus quam sed nibh. Sed vulputate lacinia ex sit amet vehicula. Ut dignissim, dui id imperdiet placerat, diam
+            magna consectetur erat, tempus euismod mi metus at dui. Integer scelerisque leo quis velit accumsan, id vulputate purus feugiat. Proin nec nulla augue. Nullam malesuada sem eget dapibus posuere. Proin rutrum pretium nunc, ut blandit nunc dictum
+            vitae. Nam hendrerit, enim ac egestas interdum, sapien sem finibus massa, pellentesque pretium lectus sem porttitor tellus. Praesent elit nunc, sodales vitae porttitor sed, finibus id quam. Etiam quis elit eu arcu finibus facilisis ac et justo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab fuga non repellendus? Molestias voluptatem ut quam iusto consectetur veniam. Beatae, error laborum totam possimus ducimus consectetur rem vero minus. Phasellus morbi.
+        </p>
+
+        <p class="deux">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod felis eu nulla dignissim maximus. Phasellus euismod nisl metus, vitae elementum lacus elementum sit amet. Praesent vehicula urna ut sem gravida elementum quis in orci. Praesent
+            id felis ac sapien viverra laoreet a quis felis. Nam dignissim, libero vitae consequat tincidunt, enim nisl vehicula mi, et dapibus purus quam sed nibh. Sed vulputate lacinia ex sit amet vehicula. Ut dignissim, dui id imperdiet placerat, diam
+            magna consectetur erat, tempus euismod mi metus at dui. Integer scelerisque leo quis velit accumsan, id vulputate purus feugiat. Proin nec nulla augue. Nullam malesuada sem eget dapibus posuere. Proin rutrum pretium nunc, ut blandit nunc dictum
+            vitae. Nam hendrerit, enim ac egestas interdum, sapien sem finibus massa, pellentesque pretium lectus sem porttitor tellus. Praesent elit nunc, sodales vitae porttitor sed, finibus id quam. Etiam quis elit eu arcu finibus facilisis ac et justo.
+            Phasellus morbi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat nisi velit eligendi sapiente ipsam amet nostrum quibusdam suscipit fugiat quos, quam earum quaerat itaque corporis similique, enim blanditiis fuga!
+        </p>
+    </div>
+</body>
+
+</html>

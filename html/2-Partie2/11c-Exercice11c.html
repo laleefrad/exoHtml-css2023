@@ -1,0 +1,96 @@
+<!--
+Dans le fragment de page suivant,
+<h1>Un titre</h1>
+<p>Paragraphe 1</p>
+<p>Paragraphe 2</p>
+
+Quand on écrit, par exemple,
+
+h1 p {
+	color: yellow;
+}
+
+,tous les p du h1 auront la couleur du texte en jaune.
+Si on écrit,
+
+h1+p {
+	color: yellow;
+}
+
+seul le premier p sera en jaune.
+-->
+
+<!--
+	1 - Créez un document contenant un titre h1 suivi de deux h2.
+	2 - Chaque h2 précède deux p.
+	3 - Mettez le premier h2 dans une autre couleur.
+	4 - Mettez le premier p suivant le premier h2 dans une autre couleur.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 11 C</title>
+</head>
+<style>
+    #color1 {
+        background-color: violet;
+    }
+    
+    h2 #colorp {
+        background-color: mediumseagreen;
+    }
+</style>
+
+<body>
+    <h1> Exo 11 C </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nam aut suscipit tempore doloribus voluptas aliquid, hic laudantium consectetur ab. Exercitationem minima illo ex libero eligendi earum quisquam laudantium tempore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur accusantium quia placeat iusto nulla ipsa asperiores, illum deserunt ea dignissimos? Ducimus et sit animi harum soluta placeat quaerat! Minus, reprehenderit.</p>
+
+    <h2 id="color1">
+        <p id="colorp"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum numquam tenetur fugiat mollitia veniam. Inventore voluptas illum mollitia velit voluptatem aspernatur quo adipisci tenetur ratione sint! Nam consectetur adipisci aliquid!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam odio optio corporis nostrum eligendi quisquam porro necessitatibus autem delectus earum. Cumque ad, consequatur tempore adipisci placeat doloribus id iure aut?</p>
+    </h2>
+
+    <h2 id="color2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis laborum, minima quia eligendi assumenda reprehenderit, similique qui eius sequi ipsam esse itaque eveniet id, quaerat maxime! Doloremque dolorem fugit obcaecati.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente harum molestiae quam adipisci consectetur ea eius iste dolorum tempora laboriosam amet quibusdam, totam vitae qui odio veniam velit quia!</p>
+    </h2>
+</body>
+
+<!--             CORRECTION
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1+h2 {
+      color: red;
+    }
+
+    h1+h2+p{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>titre h1</h1>
+  <h2> premier h2</h2>
+  <p>1 - Créez un document contenant un titre h1 suivi de deux h2.
+    2 - Chaque h2 précède deux p.
+    3 - Mettez le premier h2 dans une autre couleur.
+    4 - Mettez le premier p suivant le premier h2 dans une autre couleur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quas quia, esse reiciendis, quisquam ipsa officiis voluptas iste aliquam temporibus rem modi pariatur labore similique dolorem odio corporis molestias consequatur.</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quas quia, esse reiciendis, quisquam ipsa officiis voluptas iste aliquam temporibus rem modi pariatur labore similique dolorem odio corporis molestias consequatur.</p>
+  <h2>2 h2</h2>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quas quia, esse reiciendis, quisquam ipsa officiis voluptas iste aliquam temporibus rem modi pariatur labore similique dolorem odio corporis molestias consequatur.</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quas quia, esse reiciendis, quisquam ipsa officiis voluptas iste aliquam temporibus rem modi pariatur labore similique dolorem odio corporis molestias consequatur.</p>
+</body>
+</html>
+-->
+
+</html>

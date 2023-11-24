@@ -1,0 +1,51 @@
+<!--
+L'insertion d'image se fait au moyen de la balise <img> qui s'écrit de la façon suivante :
+<img src="adresse_image">
+-->
+
+<!--
+	1 - Créez un document contenant trois balises image.
+	2 - La première est en format GIF.
+	3 - La seconde est en format JPEG.
+	4 - La troisième est en format PNG.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exo 17</title>
+</head>
+
+<body>
+    <header>
+        <h1> Les Images
+            <style>
+                h1 {
+                    text-align: center;
+                }
+                
+                img {
+                    width: 50%;
+                }
+                
+                #img {
+                    display: flex;
+                }
+            </style>
+        </h1>
+    </header>
+    <div id="img">
+        <div>
+            <img src="img/miku.jpg" alt="atsune miku" title="image1">
+
+        </div>
+        <div> <img src="img/yeuxChat.png" alt="des yeus de chat" title="image2">
+        </div>
+        <div> <img src="img/giphy.gif" alt="giphy le pingouin" title="image3">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+h1 {
+    background-color: rgb(138, 93, 197);
+    color: rgb(0, 255, 64);
+    text-align: center;
+}
+
+h2 {
+    background-color: rgb(223, 34, 176);
+    color: rgb(63, 32, 7);
+}
+
+pre {
+    background-color: grey;
+}

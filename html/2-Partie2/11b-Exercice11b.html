@@ -1,0 +1,72 @@
+<!--
+Dans le fragment de page suivant,
+<div> 
+	<p>
+	<cite>Un texte </cite>
+	</p>
+</div>
+
+	<p>
+		<cite>Un autre texte</cite>
+	</p>
+
+
+Quand on écrit, par exemple,
+
+p cite{
+	color: red;
+}
+
+,tous les cite auront la couleur du texte en rouge.
+Si on écrit,
+
+div>cite{
+	color: red;
+}
+
+seul <cite>Un texte</cite> sera en rouge.
+-->
+
+<!--
+	1 - Créez un document contenant un strong et deux p.
+	2 - Le premier p contient un strong.
+	3 - Le second p contient un cite qui contient un strong.
+	4 - Sans utiliser d'id ou de class ou de style écrit dans la balise, mettez une couleur différente sur chacun des strong.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exo 11b</title>
+    <style>
+        strong {
+            background-color: gray;
+        }
+        
+        p cite strong {
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exo 11 b</h1>
+    </header>
+    <div>
+        <strong>Bonjour </strong>
+        <p>Lorem ipsum dolor sit amet consectetur <strong>Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Assumenda,
+        distinctio aperiam. Veniam expedita sed quo,
+        aliquid quia temporibus harum,
+        labore quis tempore iusto nemo. Recusandae delectus numquam ipsam ipsa assumenda! </strong>adipisicing elit. Unde dignissimos cupiditate fugiat quidem? Temporibus minima neque possimus architecto ipsum error natus. Et, quasi libero nihil nisi
+            illo aut cupiditate sequi? </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <cite><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio consequuntur magni saepe ab pariatur fugit minus? Atque nesciunt,
+        corporis mollitia quisquam eum accusantium tenetur,
+        recusandae ipsam vero inventore maiores? </strong></cite>harum aperiam fuga? Vel velit odio dolor, mollitia error nostrum modi illum quam at, ullam maiores fugit tempora obcaecati? Fugit, et! </p>
+    </div>
+</body>
+
+</html>

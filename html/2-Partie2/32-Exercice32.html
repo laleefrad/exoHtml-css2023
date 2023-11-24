@@ -1,0 +1,73 @@
+<!--
+Jusqu'à maintenant, nous avons appliqué une couleur de fond à nos blocs.
+On peut également appliquer une image à un bloc.
+de la façon suivante :
+p{
+	background-image: url("fond.jpg");
+}
+Plusieurs réglages supplémentaires sont possibles :
+_ background-position : position initiale d'une image d'arrière-plan
+_ background-origine : position de l'origine d'une image
+_ background-size: dimension de l'image d'arrière-plan 
+_ background-repeat :  spécifie la façon dont l'image d'arrière-plan doit être répétée
+
+-->
+
+<!--
+	1 - Créez un document avec un h1 et un paragraphe.
+	2 - Mettez une image d'arrière plan sur le h1. Choisissez une image de quelques pixels de côté.
+	3 - Mettez une image d'arrière plan sur le paragraphe. L'image sera moins grande que la largeur de la page. Faites répéter cette image. 
+	4 - Mettez une image d'arrière plan sur le body. À l'aide de background-size, remplissez la page sans déformer l'image.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exo 32</title>
+    <style>
+        .title {
+            text-align: center;
+            color: mediumslateblue;
+        }
+        
+        h2 {
+            background-image: url("img/chatSorcier.jpg");
+            padding: 50px;
+        }
+        
+        p {
+            background-image: url("img/OIP.jpg");
+            background-repeat: inherit;
+        }
+        
+        body {
+            background-image: url("img/yeuxChat.png");
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="title"> Exo 32 </h2>
+    </header>
+    <div class="fond">
+        <h1> Arrière plan & fond d'écran </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero ipsam impedit quae rerum nemo saepe, tempora odit fuga explicabo! Quo voluptates ipsa ad fuga rem quaerat obcaecati ullam soluta. let name Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Aliquam dolore eum, deleniti consequatur corporis in excepturi, architecto cupiditate non libero consequuntur. Amet possimus id dolores, numquam a quis earum dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dicta dolor eligendi delectus expedita possimus? Beatae perferendis quam ipsa ut praesentium delectus eos nostrum architecto harum. Laborum corrupti doloremque odit. Suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+            maxime pariatur maiores, ab harum animi nisi dolor eaque consequatur tempora similique suscipit. Est doloremque impedit sed quod deserunt magnam natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, harum vitae asperiores
+            iusto minima voluptate. Sint tempora eligendi a eum, quia commodi repellat. Ratione libero molestias laborum iusto perspiciatis nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sed dolor reprehenderit blanditiis accusamus.
+            Eveniet harum sunt accusantium temporibus voluptatibus impedit. Sed accusamus sint aliquid vel. Distinctio necessitatibus eaque iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia eius vel ipsum earum atque! Non magni
+            voluptas, temporibus est, impedit placeat optio voluptatum quae aspernatur, dignissimos pariatur deleniti neque sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minus non aperiam sequi? Quasi ex consequatur, nam asperiores
+            quo voluptatum et perspiciatis amet dignissimos voluptates nobis aliquam repellendus, veritatis voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, corporis. Odio, voluptatibus. Ipsam nemo distinctio officia soluta
+            aspernatur ducimus itaque quis sapiente quisquam, aut consequatur adipisci assumenda veniam! Nostrum, maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita labore, harum rerum et maiores illo quo facilis possimus
+            quis. Fuga nobis voluptatibus quam ut atque eaque neque alias assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis fuga tempore, corrupti aliquam nesciunt ipsa labore at nulla non eos iusto enim repellat quibusdam,
+            magnam quaerat iure, cumque aperiam adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque facilis sunt, iusto recusandae in reiciendis, odit cumque corrupti repudiandae voluptate temporibus ab esse suscipit autem modi praesentium
+            iure est tempore!</p>
+    </div>
+</body>
+
+</html>

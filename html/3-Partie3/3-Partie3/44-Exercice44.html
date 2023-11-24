@@ -1,0 +1,100 @@
+<!--
+Dans un tableau HTML, les balises <thead>, <tbody>, et <tfoot> sont utilisées pour spécifier différentes zones du tableau, chacune ayant un rôle spécifique :
+
+<thead> : 
+	Cette balise est utilisée pour grouper l'ensemble des lignes d'en-tête du tableau. 
+	Elle contient généralement une ou plusieurs lignes <tr> qui à leur tour contiennent des cellules d'en-tête (<th>).
+
+<tfoot> : 
+	Cette balise est destinée à grouper l'ensemble des lignes de pied de page du tableau. 
+	Les informations ici sont souvent des résumés ou des totaux des données présentées dans le tableau.
+
+<tbody> : 
+	Cette balise est utilisée pour grouper le corps principal du tableau, contenant la majorité des données.
+
+Dans l'ordre de déclaration, on débute par le thead, puis le tfoot et enfin le tbody.
+-->
+
+<!--
+	1 - Reprenez le tableau de l'exercice précédent 
+	2 - Mettez la première ligne en gras au moyen de la balise thead.
+	3 - Répétez les informations de la première ligne dans une autre ligne située à la base du tableau. (au dessous) 
+	4 - Mettez également cette ligne en gras.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo 44</title>
+</head>
+<style>
+    h1,
+    h2 {
+        text-align: center;
+        color: rgb(155, 11, 184);
+    }
+    
+    .haut {
+        text-align: center;
+    }
+    
+    table {
+        background-color: darkblue;
+        color: wheat;
+        border: solid 5px grey;
+    }
+    
+    td {
+        border: dashed 2px rgb(167, 199, 212);
+    }
+    
+    .pied {
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Exo 44</h1>
+        <h2>Les tableaux</h2>
+    </header>
+    <div class="haut">
+        <table>
+            <tr>
+                <thead>
+                    <th>Ville &nbsp;</th>
+                    <th>Département &nbsp;</th>
+                    <th>Région &nbsp;</th>
+                </thead>
+
+
+            </tr>
+            <tr>
+                <td>Argenteuil&nbsp;</td>
+                <td>Val d'Oise &nbsp;</td>
+                <td>Iles de France &nbsp;</td>
+            </tr>
+            <tr>
+                <td>Cormeilles &nbsp;&nbsp;</td>
+                <td>Val d'Oise&nbsp;</td>
+                <td>Iles de France&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Cartelègue</td>
+                <td>Gironde</td>
+                <td>Nouvelle Aquitaine</td>
+            </tr>
+        </table>
+    </div>
+    <div class="pied">
+        <tfoot>
+            <th>Ville &nbsp;</th>
+            <th>Département &nbsp;</th>
+            <th>Région &nbsp;</th>
+        </tfoot>
+    </div>
+</body>
+
+</html>

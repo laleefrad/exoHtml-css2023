@@ -1,0 +1,57 @@
+<!--
+Dans une liste non ordonnée ou ordonnée, on peut modifier l'apparence des li au moyen de la déclaration CSS list-style-type.  
+-->
+
+<!--
+	1 - Créez un document.
+	2 - Vous y insérez une liste à puce contenant cinq entrées.
+	3 - Dans la troisième entrée, vous insérez une autre liste à puce comprenant trois entrées.
+	4 - Changez le type de puce de cette dernière liste.
+	5 - Masquez la puce de la cinquième entrée de la liste.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exo 26 </title>
+    <style>
+        .title {
+            text-align: center;
+        }
+        
+        li:nth-child(odd) {
+            color: red
+        }
+        
+        .nouveau {
+            list-style: georgian inside url('https://icones8.fr/icon/59723/mode-avion-on');
+        }
+        
+        .vide {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title"> Exo 26 </h1>
+    </header>
+    <div class="list">
+        <ul>
+            <li>Élément 1 </li>
+            <li>Élément 2 </li>
+            <li>Élément 3
+                <li class="nouveau">Nouvel élement 1 </li>
+                <li class="nouveau">Nouvel élement 2 </li>
+                <li class="nouveau">Nouvel élement 3 </li>
+            </li>
+            <li>Élément 4 </li>
+            <li class="vide">Élément 5 </li>
+        </ul>
+    </div>
+</body>
+
+</html>

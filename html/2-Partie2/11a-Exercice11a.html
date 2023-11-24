@@ -1,0 +1,41 @@
+<!--
+Quand une balise ou une class se retrouve plusieurs fois dans la page, il est possible de cibler seulement certaines balises ou class en indiquant une partie ou la totalité du chemin pour l'atteindre.
+Par exemple,
+
+p code{
+	color: blue;
+}
+
+p .maBalise{
+	background-color: green;
+}
+-->
+
+<!--
+	1 - Créez un document contenant trois paragraphes. Associez une class seulement au premier.
+	2 - Intégrez une citation dans chaque paragraphe (<cite>)
+	3 - Donnez une couleur différente uniquement à la citation dans le paragraphe avec une class.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exo11.css">
+    <title>Exo 11</title>
+</head>
+
+<body>
+
+    <header> Exo 11 </header>
+    <p class="prems"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis laborum expedita neque, blanditiis ex, cum incidunt soluta fugiat beatae consequuntur dolores
+        <cite> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam nisi commodi nulla porro dolorem numquam quae dolorum voluptatum assumenda ex deleniti asperiores facilis a harum blanditiis, architecto sunt quasi?</cite>repudiandae
+        culpa corrupti! Asperiores sed optio vero itaque aut?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur <cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit fugiat in beatae voluptatum molestiae enim, iure ea odio vel harum quia consectetur asperiores aperiam deleniti aspernatur vitae fugit adipisci omnis!</cite>adipisicing
+        elit. Beatae ut ullam deserunt, esse laborum minus rem? Praesentium excepturi itaque, accusantium animi dignissimos velit quidem quae in quisquam explicabo odio dicta!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ea ipsam eius excepturi odit tenetur, earum quis laborum vitae? Reiciendis asperiores assumenda eveniet nemo quasi<cite> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ratione, officia illo voluptas ipsum, culpa sed id tenetur eum repellendus, quo aut amet cumque. Magnam quidem voluptate ex optio mollitia!</cite>nisi
+        adipisci quas obcaecati temporibus!</p>
+</body>
+
+</html>
